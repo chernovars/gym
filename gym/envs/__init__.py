@@ -246,6 +246,14 @@ register(
 )
 
 register(
+    id='DoublePendulumSwingUp-v1',
+    entry_point='gym.envs.mujoco:DoublePendulumSwingUpEnv',
+    max_episode_steps=1000,
+    reward_threshold=9100.0,
+)
+
+
+register(
     id='HalfCheetah-v1',
     entry_point='gym.envs.mujoco:HalfCheetahEnv',
     max_episode_steps=1000,
